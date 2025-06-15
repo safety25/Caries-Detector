@@ -5,8 +5,6 @@ from torch.utils.data import Dataset
 from PIL import Image
 import torchvision.transforms as T
 import albumentations as A
-# from evaluate.utils import get_data_test_overlap, rgb2gray, paint_border_overlap, extract_ordered_overlap, recompone_overlap, metric_calculate
-
 
 class TrainDataset(Dataset):
     def __init__(self, image_list, label_list, ul_image_list = None, transize = 384):

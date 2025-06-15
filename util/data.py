@@ -7,7 +7,7 @@ import numpy as np
 # Ayarlar
 dataset_path = "/content/drive/MyDrive/Colab Notebooks/dental_images"
 patch_size = 384
-positive_threshold = 0.01  # %2 eşik (maskede pozitif piksellerin oranı)
+positive_threshold = 0.01  # %1 eşik (maskede pozitif piksellerin oranı)
 
 # Orijinal görüntü ve maske klasörleri
 image_path = os.path.join(dataset_path, "images")
@@ -22,7 +22,6 @@ train_mask_path = os.path.join(train_path, "labels_clean")
 val_image_path = os.path.join(val_path, "images")
 val_mask_path = os.path.join(val_path, "labels_clean")
 
-# Klasörleri oluştur
 os.makedirs(train_image_path, exist_ok=True)
 os.makedirs(train_mask_path, exist_ok=True)
 os.makedirs(val_image_path, exist_ok=True)

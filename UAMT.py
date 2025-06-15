@@ -20,9 +20,6 @@ from torch.utils.data import Dataset
 import segmentation_models_pytorch as smp
 import random
 from PIL import Image
-#from util.utils import mean_metric, DiceLoss, mse_loss, sigmoid_rampup, get_current_consistency_weight, sigmoid_mse_loss
-#from evaluate.utils import recompone_overlap, metric_calculate
-# from colab.dataset import TrainDataset, ValDataset, UnlabeledDataset
 from medpy import metric
 
 gpu_list = [0]
