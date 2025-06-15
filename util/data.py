@@ -7,7 +7,7 @@ import numpy as np
 # Ayarlar
 dataset_path = "/content/drive/MyDrive/Colab Notebooks/dental_images"
 patch_size = 384
-positive_threshold = 0.01  # %2 eşik (maskede pozitif piksellerin oranı)
+positive_threshold = 0.01  # %1 eşik (maskede pozitif piksellerin oranı)
 
 # Orijinal görüntü ve maske klasörleri
 image_path = os.path.join(dataset_path, "images")
